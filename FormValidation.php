@@ -55,10 +55,6 @@
         $agreeErr=input_data($_POST["agree"]);
     }
 
-    function input_data($data){
-        $data=trim($data);
-        $data=stripslashes($data);
-        $data=htmlspecialchars($data);
-
-        return $data;
-    }
+function input_data($data){
+    return htmlspecialchars(stripslashes(trim($data)));
+}
