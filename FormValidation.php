@@ -47,6 +47,14 @@
         $gender=input_data($_POST["gender"]);
     }
 
+    //Check-Box Validation
+    if (!isset($_POST["agree"])) {
+        # code...
+        $agreeErr="Accept the terms to proceed";
+    } else{
+        $agreeErr=input_data($_POST["agree"]);
+    }
+
     function input_data($data){
         $data=trim($data);
         $data=stripslashes($data);
