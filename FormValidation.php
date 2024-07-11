@@ -22,6 +22,22 @@
         }
     }
 
+    // Number Validation
+    if (empty($_POST["mobileno"])) {
+        # code...
+        $mobilenoErr="Mobile Number is required";
+    } else{
+        $mobilenoErr=input_data($_POST["mobileno"]);
+        if (!preg_match("/^[0-9]*$/",$mobileno)) {
+            # code...
+            $mobilenoErr="Only Numeric Value is Allowed";
+        }
+    }
+    if (strlen($mobileno)!=10) {
+        # code...
+        $mobilenoErr="Mobile number must be 10 digits.";
+    }
+
     function input_data($data){
         $data=trim($data);
         $data=stripslashes($data);
