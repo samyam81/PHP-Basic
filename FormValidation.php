@@ -38,6 +38,15 @@
         $mobilenoErr="Mobile number must be 10 digits.";
     }
 
+    //Empty Field Validation
+    if (empty($_POST["gender"])) {
+        # code...
+        $genderErr="Gender is Required";
+    } else {
+        # code...
+        $gender=input_data($_POST["gender"]);
+    }
+
     function input_data($data){
         $data=trim($data);
         $data=stripslashes($data);
