@@ -42,4 +42,3 @@ This repository includes various basic PHP examples:
 
 Feel free to contribute new examples or improve existing ones. Please create a pull request with your changes!
 
-**Project Repository:**  This project is hosted on GitHub. You can find the source code and contribute here: [invalid URL removed]
