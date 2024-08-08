@@ -52,7 +52,7 @@
         # code...
         $agreeErr="Accept the terms to proceed";
     } else{
-        $agreeErr=input_data($_POST["agree"]);
+        $agree=input_data($_POST["agree"]);
     }
 
 function input_data($data){
