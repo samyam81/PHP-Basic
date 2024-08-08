@@ -13,9 +13,9 @@
 
     //Email Validation
     if(empty($_POST["email"])){
-        $email="Email is Required";
+        $emailErr="Email is Required";
     } else{
-        $emailErr=input_data($_POST["email"]);
+        $email=input_data($_POST["email"]);
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
             # code...
             $emailErr="Invalid Email Format";
