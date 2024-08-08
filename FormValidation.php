@@ -27,7 +27,7 @@
         # code...
         $mobilenoErr="Mobile Number is required";
     } else{
-        $mobilenoErr=input_data($_POST["mobileno"]);
+        $mobileno=input_data($_POST["mobileno"]);
         if (!preg_match("/^[0-9]*$/",$mobileno)) {
             # code...
             $mobilenoErr="Only Numeric Value is Allowed";
