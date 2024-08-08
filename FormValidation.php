@@ -13,7 +13,7 @@
 
     //Email Validation
     if(empty($_POST["email"])){
-        $emailErr="Email is Required";
+        $email="Email is Required";
     } else{
         $emailErr=input_data($_POST["email"]);
         if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
